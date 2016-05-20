@@ -11216,6 +11216,8 @@ in
       '';
   }));
 
+  systemd-manager = callPackage ../os-specific/linux/systemd-manager { };
+
   sysvinit = callPackage ../os-specific/linux/sysvinit { };
 
   sysvtools = callPackage ../os-specific/linux/sysvinit {
